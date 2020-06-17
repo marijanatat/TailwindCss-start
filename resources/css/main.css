@@ -2,5 +2,37 @@
 
 @tailwind components;
 
+.btn{
+    @apply inline-block  font-semibold  text-sm  rounded-lg uppercase tracking-wider  px-5 py-3 ;
+}
+
+.btn:focus{
+    @apply outline-none shadow-outline;
+
+}
+
+
+.btn-orange{
+    @apply text-orange-500 bg-gray-500 px-5 py-3 ;
+}
+.btn-orange:hover{
+   @apply text-xl bg-gray-700;
+}
+.btn-orange:active{
+   @apply bg-gray-800;
+}
+
+
+.btn-gray{
+    @apply text-gray-500  bg-gray-900 ;
+}
+.btn-gray:hover{
+   @apply text-xl bg-gray-500;
+}
+.btn-gray:active{
+   @apply bg-gray-500;
+}
+
+
 @tailwind utilities;
 

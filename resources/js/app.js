@@ -24,6 +24,8 @@ Vue.use(VModal)
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('login', require('./components/Login.vue').default);
+Vue.component('device-card', require('./components/DeviceCard.vue').default);
+Vue.component('app', require('./components/App.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
