@@ -1972,6 +1972,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'app',
@@ -1981,20 +1982,26 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       popularDevices: [{
-        name: 'Acer',
-        averagePrice: 350,
+        name: 'Acer ',
+        averageMark: 3,
+        mark: 2,
+        price: 350,
         deviceCount: 76,
         imageUrl: '/images/acer.jpg',
         imageAlt: 'Acer'
       }, {
         name: 'Asus',
-        averagePrice: 400,
+        averageMark: 3,
+        mark: 4,
+        price: 400,
         deviceCount: 43,
         imageUrl: '/images/asus.jpg',
         imageAlt: 'Asus'
       }, {
         name: 'Dell',
-        averagePrice: 550,
+        averageMark: 3,
+        mark: 5,
+        price: 500,
         deviceCount: 45,
         imageUrl: '/images/dell.png',
         imageAlt: 'Dell'
@@ -2014,6 +2021,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -37643,42 +37664,48 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "app" } }, [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", [
-      _c(
-        "div",
-        {
-          staticClass:
-            "max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8"
-        },
-        [
-          _c("h2", { staticClass: "text-xl text-gray-900" }, [
-            _vm._v("Popular products")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "text-gray-600" }, [
-            _vm._v("A selection of great devices.")
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "flex flex-wrap -mx-4" },
-            _vm._l(_vm.popularDevices, function(device) {
-              return _c(
-                "div",
-                { staticClass: "mt-6 w-full px-4 lg:w-1/2 xl:w-1/3" },
-                [_c("DeviceCard", { attrs: { device: device } })],
-                1
-              )
-            }),
-            0
-          )
-        ]
-      )
-    ])
-  ])
+  return _c(
+    "div",
+    { staticClass: "antialiased text-gray-900", attrs: { id: "app" } },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", [
+        _c(
+          "div",
+          {
+            staticClass:
+              "max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8"
+          },
+          [
+            _c(
+              "h2",
+              { staticClass: "text-2xl  font-semibold text-orange-500" },
+              [_vm._v("Popular products ")]
+            ),
+            _vm._v(" "),
+            _c("p", { staticClass: "text-gray-800 font-semibold text-lg" }, [
+              _vm._v("A selection of great devices.")
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "flex flex-wrap -mx-4" },
+              _vm._l(_vm.popularDevices, function(device) {
+                return _c(
+                  "div",
+                  { staticClass: "mt-6 w-full px-4 lg:w-1/2 xl:w-1/3" },
+                  [_c("DeviceCard", { attrs: { device: device } })],
+                  1
+                )
+              }),
+              0
+            )
+          ]
+        )
+      ])
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
@@ -37705,7 +37732,7 @@ var staticRenderFns = [
                 "h3",
                 {
                   staticClass:
-                    "mt-6 text-xl font-bold text-gray-900 leading-tight sm-w-full xl:text-4xl "
+                    "mt-5 text-xl font-bold text-gray-900 leading-tight sm-w-full xl:text-4xl "
                 },
                 [
                   _vm._v("Summer"),
@@ -37719,7 +37746,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("img", {
               staticClass:
-                "h-12 mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-64 sm-w-full sm:object-cover sm:object-center lg:hidden",
+                "h-12 mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-72 sm:w-full sm:object-cover sm:object-center lg:hidden",
               attrs: { src: "/images/beach.jpg", alt: "beach" }
             }),
             _vm._v(" "),
@@ -37764,7 +37791,7 @@ var staticRenderFns = [
               _c(
                 "a",
                 {
-                  staticClass: "btn btn-gray sm:text-base ",
+                  staticClass: "btn btn-gray sm:text-base ml-2 ",
                   attrs: { href: "#" }
                 },
                 [_vm._v("Learn more")]
@@ -37809,32 +37836,78 @@ var render = function() {
     "div",
     {
       staticClass:
-        "flex items-center rounded-lg bg-white shadow-lg overflow-hidden"
+        " flex items-center border rounded-lg shadow shadow-md bg-orange-300 overflow-hidden "
     },
     [
-      _c("img", {
-        staticClass: "h-32 w-32 flex-shrink-0",
-        attrs: { src: _vm.device.imageUrl, alt: _vm.device.imageAlt }
-      }),
+      _c("div", { staticClass: "ml-2" }, [
+        _c("img", {
+          staticClass: "h-32 w-32 flex-shrink-0 bg-white",
+          attrs: { src: _vm.device.imageUrl, alt: _vm.device.imageAlt }
+        })
+      ]),
       _vm._v(" "),
-      _c("div", { staticClass: "px-6 py-4" }, [
-        _c("h3", { staticClass: "text-lg font-semibold text-gray-800" }, [
-          _vm._v(_vm._s(_vm.device.name))
+      _c("div", { staticClass: " px-6 py-4 ml-2 " }, [
+        _c("div", { staticClass: "flex items-center " }, [
+          _c(
+            "span",
+            {
+              staticClass:
+                " uppercase tracking-wide font-semibold bg-teal-200 text-red-600 rounded-full shadow-md mr-2 outline-none text-xs px-2 py-1"
+            },
+            [_vm._v(" New")]
+          ),
+          _vm._v(" "),
+          _c(
+            "h3",
+            { staticClass: "text-lg font-semibold text-gray-900 text-3xl " },
+            [_vm._v(_vm._s(_vm.device.name))]
+          )
         ]),
         _vm._v(" "),
-        _c("p", { staticClass: "text-gray-600" }),
-        _c("p", [_vm._v("€" + _vm._s(_vm.device.averagePrice))]),
+        _c("p", { staticClass: "text-gray-600 text-xs mt-2" }),
+        _c("p", [_vm._v("€" + _vm._s(_vm.device.price))]),
         _c("p"),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "flex mt-2 items-center" },
+          [
+            _vm._l(5, function(i) {
+              return _c(
+                "svg",
+                {
+                  key: i,
+                  staticClass: "h-4 w-4 fill-current",
+                  class:
+                    i <= _vm.device.mark ? "text-teal-500" : "text-gray-400",
+                  attrs: { viewBox: "0 0 24 24" }
+                },
+                [
+                  _c("path", {
+                    attrs: {
+                      d:
+                        "M8.128 19.825a1.586 1.586 0 0 1-1.643-.117 1.543 1.543 0 0 1-.53-.662 1.515 1.515 0 0 1-.096-.837l.736-4.247-3.13-3a1.514 1.514 0 0 1-.39-1.569c.09-.271.254-.513.475-.698.22-.185.49-.306.776-.35L8.66 7.73l1.925-3.862c.128-.26.328-.48.577-.633a1.584 1.584 0 0 1 1.662 0c.25.153.45.373.577.633l1.925 3.847 4.334.615c.29.042.562.162.785.348.224.186.39.43.48.704a1.514 1.514 0 0 1-.404 1.58l-3.13 3 .736 4.247c.047.282.014.572-.096.837-.111.265-.294.494-.53.662a1.582 1.582 0 0 1-1.643.117l-3.865-2-3.865 2z"
+                    }
+                  })
+                ]
+              )
+            }),
+            _vm._v(" "),
+            _c("span", { staticClass: "text-gray-700 ml-1" }, [
+              _vm._v(" stars")
+            ])
+          ],
+          2
+        ),
         _vm._v(" "),
         _c("div", { staticClass: "mt-4" }, [
           _c(
             "a",
             {
-              staticClass:
-                "text-orange-500 hover:text-black-400 font-semibold text-sm",
+              staticClass: "font-base text-gray-600 tracking-wide text-sm ",
               attrs: { href: "#" }
             },
-            [_vm._v("Explore " + _vm._s(_vm.device.deviceCount) + " products")]
+            [_vm._v(" Explore " + _vm._s(_vm.device.deviceCount) + " products")]
           )
         ])
       ])
