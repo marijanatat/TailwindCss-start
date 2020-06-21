@@ -7,7 +7,7 @@
                 <div class="xl:max-w-lg xl:ml-auto">
                    <div class="flex items-center">
                        <img src="/images/Summer_03.png" alt="worcation" class="h-12" >
-                       <h3 class="mt-5 text-xl font-bold text-gray-900 leading-tight sm-w-full xl:text-4xl ">Summer<span class="text-orange-600">Is</span>Here</h3>
+                       <h3 class="mt-4 text-3xl font-bold text-gray-900 leading-tight sm-w-full xl:text-4xl ">Summer<span class="text-orange-600">Is</span>Here</h3>
                    </div>
                    <img src="/images/beach.jpg" alt="beach"
                     class="h-12 mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-72 sm:w-full sm:object-cover sm:object-center lg:hidden"  >
@@ -61,7 +61,7 @@ export default {
     return {
       popularDevices: [
         {
-          name: 'Acer ',
+          name: 'Acer',
           averageMark: 3 ,
           mark:2,
           price:350,

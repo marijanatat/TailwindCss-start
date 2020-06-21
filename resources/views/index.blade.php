@@ -18,6 +18,7 @@
     </head>
     <body class="bg-gray-300 ">
         <div id="app">
+        <Navbar></Navbar>
        <App></App>
         {{-- <div class="flex bg-gray-100">
 

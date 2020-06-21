@@ -1,13 +1,14 @@
 <template>
-    <div  class=" flex items-center border rounded-lg shadow shadow-md bg-orange-300 overflow-hidden ">
+    <div  class=" flex items-center border rounded-lg shadow shadow-md bg-orange-400 overflow-hidden ">
         <div class="ml-2">
-            <img class="h-32 w-32 flex-shrink-0 bg-white":src="device.imageUrl" :alt="device.imageAlt"></img>
+           <img class="h-32 w-32 flex-shrink-0 bg-white":src="device.imageUrl" :alt="device.imageAlt"></img>
+             
         </div>
         <div class=" px-6 py-4 ml-2 ">
             <div class="flex items-center ">
-               <span class=" uppercase tracking-wide font-semibold bg-teal-200 text-red-600 rounded-full shadow-md mr-2 outline-none text-xs px-2 py-1"> New</span>
-             <!--   <span :class="device.name==='Acer'?'bg-teal-500 text-red-600 rounded-md shadow-md mr-2 outline-none font-xs':''"> New</span>-->
-                <h3 class="text-lg font-semibold text-gray-900 text-3xl ">{{ device.name }}</h3>
+           <!--    <span class=" uppercase tracking-wide font-semibold bg-teal-200 text-red-600 rounded-full shadow-md mr-2 outline-none text-xs px-2 py-1"> New</span>-->
+                <span v-text="device.name=='Acer' ? 'New' : ''" :class="device.name=='Acer'?'bg-teal-500 text-red-600 rounded-md shadow-md mr-2 outline-none font-xs px-2 py-1':'' "></span>
+                <h3 class="text-lg font-semibold text-gray-900 text-3xl  ">{{ device.name }}</h3>
             </div>
 
           <p class="text-gray-600 text-xs mt-2"><p>&euro;{{ device.price }}</p></p>
