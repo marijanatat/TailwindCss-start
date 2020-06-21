@@ -2159,6 +2159,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -37765,14 +37766,14 @@ var staticRenderFns = [
         "div",
         {
           staticClass:
-            "px-20 py-10 max-w-md mx-auto sm:max-w-xl lg:w-1/2 lg:max-w-full lg:py-24 lg:px-12",
+            "px-2 py-2 md:px-20 md:py-10 max-w-md mx-auto sm:max-w-xl lg:w-1/2 lg:max-w-full lg:py-24 lg:px-12",
           attrs: { id: "app" }
         },
         [
-          _c("div", { staticClass: "xl:max-w-lg xl:ml-auto" }, [
-            _c("div", { staticClass: "flex items-center" }, [
+          _c("div", { staticClass: "ml-0 xl:max-w-lg xl:ml-auto sm:pb-2" }, [
+            _c("div", { staticClass: "flex items-center ml-0 " }, [
               _c("img", {
-                staticClass: "h-12",
+                staticClass: "h-12 ml-0",
                 attrs: { src: "/images/Summer_03.png", alt: "worcation" }
               }),
               _vm._v(" "),
@@ -37780,13 +37781,15 @@ var staticRenderFns = [
                 "h3",
                 {
                   staticClass:
-                    "mt-4 text-3xl font-bold text-gray-900 leading-tight sm-w-full xl:text-4xl "
+                    "ml-0 mt-4 sm:text-3xl font-bold text-gray-900 leading-tight sm:w-full xl:text-4xl "
                 },
                 [
                   _vm._v("Summer"),
-                  _c("span", { staticClass: "text-orange-600" }, [
-                    _vm._v("Is")
-                  ]),
+                  _c(
+                    "span",
+                    { staticClass: "text-orange-600 text-xl sm:text-3xl" },
+                    [_vm._v("Is")]
+                  ),
                   _vm._v("Here")
                 ]
               )
@@ -37794,7 +37797,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("img", {
               staticClass:
-                "h-12 mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-72 sm:w-full sm:object-cover sm:object-center lg:hidden",
+                "h-14 mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-72 w-full sm:object-cover sm:object-center lg:hidden",
               attrs: { src: "/images/beach.jpg", alt: "beach" }
             }),
             _vm._v(" "),
@@ -37826,7 +37829,7 @@ var staticRenderFns = [
               ]
             ),
             _vm._v(" "),
-            _c("div", { staticClass: "mt-4 sm:mt-6" }, [
+            _c("div", { staticClass: "mt-4 sm:mt-6 flex items-center" }, [
               _c(
                 "a",
                 {
@@ -37839,7 +37842,7 @@ var staticRenderFns = [
               _c(
                 "a",
                 {
-                  staticClass: "btn btn-gray sm:text-base ml-2 ",
+                  staticClass: "btn btn-gray sm:text-base ml-2 sm:mt-3 md:mt-0",
                   attrs: { href: "#" }
                 },
                 [_vm._v("Learn more")]
@@ -37884,7 +37887,7 @@ var render = function() {
     "div",
     {
       staticClass:
-        " flex items-center border rounded-lg shadow shadow-md bg-orange-400 overflow-hidden "
+        " flex items-center border rounded-lg shadow shadow-md bg-orange-500 overflow-hidden "
     },
     [
       _c("div", { staticClass: "ml-2" }, [
@@ -37953,7 +37956,8 @@ var render = function() {
           _c(
             "a",
             {
-              staticClass: "font-base text-gray-600 tracking-wide text-sm ",
+              staticClass:
+                "font-xl font-semibold text-blue-900 tracking-wide text-sm ",
               attrs: { href: "#" }
             },
             [_vm._v(" Explore " + _vm._s(_vm.device.deviceCount) + " products")]
@@ -38032,100 +38036,124 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("header", { staticClass: "bg-gray-800 " }, [
-    _c("div", { staticClass: " flex justify-between items-center px-4 py-3" }, [
-      _vm._m(0),
-      _vm._v(" "),
-      _c("div", [
-        _c(
-          "button",
-          {
-            staticClass:
-              "px-2 text-gray-500 focus:text-white focus:outline-none hover:text-white hover:outline-none",
-            attrs: { type: "button" },
-            on: {
-              click: function($event) {
-                _vm.isOpen = !_vm.isOpen
-              }
-            }
-          },
-          [
+  return _c(
+    "header",
+    {
+      staticClass:
+        "bg-gray-800 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3"
+    },
+    [
+      _c(
+        "div",
+        { staticClass: " flex justify-between items-center px-4 py-3 sm:p-0" },
+        [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: " ml-2 mr-0 sm:hidden" }, [
             _c(
-              "svg",
+              "button",
               {
-                staticClass: "h-6 w-6 fill-current",
-                attrs: { viewBox: "0 0 24 24" }
+                staticClass:
+                  "px-2 text-gray-500 focus:text-white focus:outline-none hover:text-white hover:outline-none",
+                attrs: { type: "button" },
+                on: {
+                  click: function($event) {
+                    _vm.isOpen = !_vm.isOpen
+                  }
+                }
               },
               [
-                _vm.isOpen
-                  ? _c("path", {
-                      attrs: {
-                        "fill-rule": "evenodd",
-                        d:
-                          "M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-                      }
-                    })
-                  : _vm._e(),
-                _vm._v(" "),
-                !_vm.isOpen
-                  ? _c("path", {
-                      attrs: {
-                        "fill-rule": "evenodd",
-                        d:
-                          "M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                      }
-                    })
-                  : _vm._e()
+                _c(
+                  "svg",
+                  {
+                    staticClass: "h-6 w-6 fill-current",
+                    attrs: { viewBox: "0 0 24 24" }
+                  },
+                  [
+                    _vm.isOpen
+                      ? _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+                          }
+                        })
+                      : _vm._e(),
+                    _vm._v(" "),
+                    !_vm.isOpen
+                      ? _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                          }
+                        })
+                      : _vm._e()
+                  ]
+                )
               ]
             )
-          ]
-        )
-      ])
-    ]),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "px-4 pb-4 pt-2", class: _vm.isOpen ? "block" : "hidden" },
-      [
-        _c(
-          "a",
-          {
-            staticClass:
-              "block px-2 py-1  text-white font-semibold rounded hover:bg-gray-800 ",
-            attrs: { href: "#" }
-          },
-          [_vm._v("List of products")]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticClass:
-              "mt-1 block px-2 py-1  text-white font-semibold rounded hover:bg-gray-800",
-            attrs: { href: "#" }
-          },
-          [_vm._v("Actions")]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticClass:
-              "mt-1 block px-2 py-1  text-white font-semibold rounded hover:bg-gray-800",
-            attrs: { href: "#" }
-          },
-          [_vm._v("Messages")]
-        )
-      ]
-    )
-  ])
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "px-4 pb-4 pt-4 sm:pt-2 sm:flex",
+          class: _vm.isOpen ? "block" : "hidden"
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass:
+                "block  px-2 py-1  text-white font-semibold rounded hover:bg-gray-800 ",
+              attrs: { href: "#" }
+            },
+            [_vm._v("List of products")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "mt-1 block px-2 py-1  text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2",
+              attrs: { href: "#" }
+            },
+            [_vm._v("Actions")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "mt-1 block px-2 py-1  text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2",
+              attrs: { href: "#" }
+            },
+            [_vm._v("Actions")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "mt-1 block px-2 py-1  text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 ",
+              attrs: { href: "#" }
+            },
+            [_vm._v("Messages")]
+          )
+        ]
+      )
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "flex items-center" }, [
+    return _c("div", { staticClass: "flex items-center " }, [
       _c("img", {
         staticClass: "h-12",
         attrs: { src: "/images/Summer_03.png", alt: "workation" }
@@ -38134,7 +38162,8 @@ var staticRenderFns = [
       _c(
         "p",
         {
-          staticClass: "text-white  tracking-wider font-semibold text-2xl ml-2"
+          staticClass:
+            "pr-8 text-white  tracking-wider font-semibold text-2xl ml-2 sm:outline-none"
         },
         [
           _vm._v("Work"),

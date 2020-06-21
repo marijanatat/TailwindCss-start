@@ -2,24 +2,24 @@
      <div id="app" class="antialiased text-gray-900">
     <div class="flex bg-gray-100">
 
-            <div id="app" class="px-20 py-10 max-w-md mx-auto sm:max-w-xl lg:w-1/2 lg:max-w-full lg:py-24 lg:px-12">
+            <div id="app" class="px-2 py-2 md:px-20 md:py-10 max-w-md mx-auto sm:max-w-xl lg:w-1/2 lg:max-w-full lg:py-24 lg:px-12">
               
-                <div class="xl:max-w-lg xl:ml-auto">
-                   <div class="flex items-center">
-                       <img src="/images/Summer_03.png" alt="worcation" class="h-12" >
-                       <h3 class="mt-4 text-3xl font-bold text-gray-900 leading-tight sm-w-full xl:text-4xl ">Summer<span class="text-orange-600">Is</span>Here</h3>
+                <div class="ml-0 xl:max-w-lg xl:ml-auto sm:pb-2">
+                   <div class="flex items-center ml-0 ">
+                       <img src="/images/Summer_03.png" alt="worcation" class="h-12 ml-0" >
+                       <h3 class="ml-0 mt-4 sm:text-3xl font-bold text-gray-900 leading-tight sm:w-full xl:text-4xl ">Summer<span class="text-orange-600 text-xl sm:text-3xl">Is</span>Here</h3>
                    </div>
                    <img src="/images/beach.jpg" alt="beach"
-                    class="h-12 mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-72 sm:w-full sm:object-cover sm:object-center lg:hidden"  >
+                    class="h-14 mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-72 w-full sm:object-cover sm:object-center lg:hidden"  >
                    <h1 class="mt-6 text-xl font-bold text-orange-600 leading-tight xl:text-3xl">Work <span class="text-gray-900 sm:text-4xl lg:text-3xl sm:mt-8">online</span></h1>
                      <p class="mt-2 text-gray-800 text-xl sm:text-xl sm:mt-4">
                         Buy a new laptop in our webstore. No matter your price category, there are simply too many different types of laptops to choose from. 
                     </p >
-                    <div class="mt-4 sm:mt-6">
+                    <div class="mt-4 sm:mt-6 flex items-center">
                         <a href="#"
                          class="btn btn-orange sm:text-base shadow-lg">Look inside</a>
                          <a href="#"
-                         class="btn btn-gray sm:text-base ml-2 ">Learn more</a>
+                         class="btn btn-gray sm:text-base ml-2 sm:mt-3 md:mt-0">Learn more</a>
                     </div>
                </div>
     

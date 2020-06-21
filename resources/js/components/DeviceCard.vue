@@ -1,5 +1,5 @@
 <template>
-    <div  class=" flex items-center border rounded-lg shadow shadow-md bg-orange-400 overflow-hidden ">
+    <div  class=" flex items-center border rounded-lg shadow shadow-md bg-orange-500 overflow-hidden ">
         <div class="ml-2">
            <img class="h-32 w-32 flex-shrink-0 bg-white":src="device.imageUrl" :alt="device.imageAlt"></img>
              
@@ -19,7 +19,7 @@
                 <span class="text-gray-700 ml-1"> stars</span>
           </div>
            <div class="mt-4">
-               <a href="#" class="font-base text-gray-600 tracking-wide text-sm " > Explore {{device.deviceCount}} products</a>
+               <a href="#" class="font-xl font-semibold text-blue-900 tracking-wide text-sm " > Explore {{device.deviceCount}} products</a>
            </div>
         </div>
         
