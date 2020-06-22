@@ -16,19 +16,25 @@
             </div>
         </div>
 
-            <div :class="isOpen ? 'block' :'hidden'" class="px-4 pb-4 pt-4 sm:pt-2 sm:flex">
+            <nav :class="isOpen ? 'block' :'hidden'" class="px-4 pb-4 pt-4 sm:pt-2 sm:flex">
+            
                 <a href="#" class="block  px-2 py-1  text-white font-semibold rounded hover:bg-gray-800 ">List of products</a>
                  <a href="#" class="mt-1 block px-2 py-1  text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Actions</a>
                  <a href="#" class="mt-1 block px-2 py-1  text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Actions</a>
                   <a href="#" class="mt-1 block px-2 py-1  text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 ">Messages</a>
-
-            </div>
+                  <Dropdown class="ml-6"></Dropdown>
+            </nav>
 
         </header>
 </template>
 
 <script>
+import Dropdown from './Dropdown'
 export default {
+     components: {
+    Dropdown
+ 
+},
     data(){
         return{
           isOpen:false,

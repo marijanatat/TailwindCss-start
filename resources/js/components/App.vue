@@ -1,5 +1,6 @@
 <template>
      <div id="app" class="antialiased text-gray-900">
+ 
     <div class="flex bg-gray-100">
 
             <div id="app" class="px-2 py-2 md:px-20 md:py-10 max-w-md mx-auto sm:max-w-xl lg:w-1/2 lg:max-w-full lg:py-24 lg:px-12">
@@ -40,23 +41,28 @@
               <p class="text-gray-800 font-semibold text-lg">A selection of great devices.</p>
               <div class="flex flex-wrap -mx-4">
                 <div class="mt-6 w-full px-4 lg:w-1/2 xl:w-1/3" v-for="device in popularDevices">
-                  <DeviceCard :device="device"/>
+                <DeviceCard :device="device"/>
+                  
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </div> 
         
+       
     </div>
 </template>
 
 <script>
 import DeviceCard from './DeviceCard'
+
+
 export default {
   name: 'app',
   components: {
-    DeviceCard,
-  },
+    DeviceCard
+ 
+},
   data() {
     return {
       popularDevices: [

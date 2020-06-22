@@ -28,6 +28,7 @@ Vue.component('device-card', require('./components/DeviceCard.vue').default);
 Vue.component('app', require('./components/App.vue').default);
 Vue.component('navbar', require('./components/Navbar.vue').default);
 
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

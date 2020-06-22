@@ -18,9 +18,9 @@
     </head>
     <body class="bg-gray-300 ">
         <div id="app">
-        <Navbar></Navbar>
-       <App></App>
-        {{-- <div class="flex bg-gray-100">
+          <Navbar></Navbar>
+         <App></App>
+          <!--  <div class="flex bg-gray-100">
 
             <div id="app" class="px-20 py-10 max-w-md mx-auto sm:max-w-xl lg:w-1/2 lg:max-w-full lg:py-24 lg:px-12">
               
@@ -64,7 +64,7 @@
               </div>
             </div>
           </div>
-        </div> --}}
+        </div> -->
     </div>
     </body>
     </html>
